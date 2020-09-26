@@ -34,6 +34,6 @@ suites:
     verifier:
       inspec_tests:
         - test/integration/server
-    exclude:
-      -name: centos-8
+    excludes:
+      - centos-8
     attributes:
