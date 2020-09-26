@@ -29,4 +29,11 @@ suites:
     verifier:
       inspec_tests:
         - test/integration/default
+  - name: server
+    named_run_list: server
+    verifier:
+      inspec_tests:
+        - test/integration/server
+    exclude:
+      -name: centos-8
     attributes:
